@@ -1,0 +1,78 @@
+
+.kontener {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+  }
+
+  .kontener:hover {
+    transform: scale(1.4);
+    z-index: 10;
+    padding-left: 30%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .kontener .miniaturka,
+  .kontener .tresc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease;
+    top: 0;
+    left: 0;
+  }
+
+  .kontener .miniaturka img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .kontener .tresc {
+    background-image: url(./image/back-mini.jpg);
+    padding: 16px;
+    box-sizing: border-box;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .kontener:hover .miniaturka {
+    opacity: 0;
+  }
+
+  .kontener:hover .tresc {
+    opacity: 1;
+  }
+
+  .kontener .tresc h3 {
+    margin: 0 0 10px;
+  }
+
+  .kontener .tresc p {
+    margin: 0 0 12px;
+    font-size: 14px;
+  }
+
+  .kontener .tresc a {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .tresc > *{
+    width: 75%;
+  }
+  
+  
